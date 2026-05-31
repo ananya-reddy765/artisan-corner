@@ -1,0 +1,49 @@
+const express = require("express");
+const multer = require("multer");
+const cloudinary = require(
+  "../config/cloudinary"
+);
+
+const router =
+  express.Router();
+
+const storage =
+  multer.memoryStorage();
+
+const upload =
+  multer({
+    storage,
+  });
+
+router.post(
+  "/",
+  upload.single("image"),
+  async (req, res) => {
+    try {
+      const file =
+        req.file;
+
+      const result =
+        await cloudinary.uploader.upload(
+          `data:${file.mimetype};base64,${file.buffer.toString(
+            "base64"
+          )}`
+        );
+
+      res.json({
+        success: true,
+        image:
+          result.secure_url,
+      });
+    } catch (error) {
+      res.status(500).json({
+        success: false,
+        message:
+          error.message,
+      });
+    }
+  }
+);
+
+module.exports =
+  router;
