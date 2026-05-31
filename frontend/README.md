@@ -1,35 +1,46 @@
 # 🎨 Artisan's Corner (CraftedIndia)
 
-A Multi-Vendor Marketplace built using the MERN Stack where artisans can create their own stores, manage products, and sell handmade items online. Customers can browse products, place orders, make secure payments, and leave reviews.
+A Multi-Vendor Marketplace built using the MERN Stack where artisans can create their own stores, manage products, and sell handmade items online. Customers can browse products, place orders, make secure payments, and leave reviews, while administrators can monitor and manage the platform.
+
+---
+
+## 🌐 Live Demo
+
+**Frontend:** https://artisan-corner.vercel.app
+
+**Backend API:** https://artisan-corner.onrender.com
+
+**GitHub Repository:** https://github.com/ananya-reddy765/artisan-corner
 
 ---
 
 ## 🚀 Features
 
-### Buyer Features
+### 👤 Buyer Features
 
 * User Registration & Login
 * Browse Products
 * Product Details Page
 * Shopping Cart
-* Stripe Checkout
+* Secure Checkout
 * Order History
 * Reviews & Ratings
 
-### Vendor Features
+### 🏪 Vendor Features
 
 * Become a Seller
 * Create Store Profile
 * Product CRUD Operations
-* Cloudinary Image Upload
+* Cloudinary Image Uploads
 * Vendor Dashboard
 * Order Management
 * Revenue Analytics
 
-### Admin Features
+### 🛡️ Admin Features
 
 * User Management
 * Product Management
+* Vendor Monitoring
 * Order Monitoring
 * Marketplace Statistics
 
@@ -40,16 +51,18 @@ A Multi-Vendor Marketplace built using the MERN Stack where artisans can create 
 ### Frontend
 
 * React.js
-* React Router
+* React Router DOM
 * Context API
 * Axios
 * Tailwind CSS
+* Vite
 
 ### Backend
 
 * Node.js
 * Express.js
 * JWT Authentication
+* REST APIs
 
 ### Database
 
@@ -67,8 +80,9 @@ A Multi-Vendor Marketplace built using the MERN Stack where artisans can create 
 
 ### User
 
-* Buyer / Vendor / Admin
+* Buyer / Vendor / Admin Roles
 * Store Profile Information
+* Authentication Details
 
 ### Product
 
@@ -76,32 +90,36 @@ A Multi-Vendor Marketplace built using the MERN Stack where artisans can create 
 * Category
 * Price
 * Stock
-* Image
+* Product Images
 
 ### Order
 
-* Buyer
-* Products
+* Buyer Reference
+* Ordered Products
 * Shipping Address
-* Payment Details
+* Payment Information
 
 ### Review
 
 * Product Reviews
 * Ratings
 
+### Category
+
+* Product Classification
+
 ---
 
 ## 📌 Key Functionalities
 
 * Multi-Vendor Marketplace
-* Role-Based Authentication
+* Role-Based Authentication & Authorization
 * Store Profile Creation
 * Product Management
-* Cart Persistence
+* Shopping Cart & Checkout
 * Secure Payments
+* Order Tracking
 * Verified Purchase Reviews
-* Commission Calculation
 * Vendor Analytics
 * Admin Dashboard
 
@@ -131,39 +149,34 @@ npm run dev
 
 ### Buyer
 
-Email: [buyer@test.com](mailto:buyer@test.com)
-
-Password: 123456
+**Email:** [buyer@test.com](mailto:buyer@test.com)
+**Password:** 123456
 
 ### Vendor
 
-Email: [vendor@test.com](mailto:vendor@test.com)
+**Email:** [vendor@test.com](mailto:vendor@test.com)
+**Password:** 123456
 
-Password: 123456
+### Admin
 
----
-
-## 🌐 Deployment
-
-Frontend: Vercel
-
-Backend: Render
+**Email:** [admin@craftedindia.com](mailto:admin@craftedindia.com)
+**Password:** 123456
 
 ---
 
-## 📷 Project Screenshots
+## 🚀 Deployment
 
-* Home Page
-* Product Page
-* Cart & Checkout
-* Vendor Dashboard
-* Admin Dashboard
+* Frontend: Vercel
+* Backend: Render
+* Database: MongoDB Atlas
+* Image Storage: Cloudinary
+* Payments: Stripe
 
 ---
 
 ## 👩‍💻 Developed By
 
-**Ananya Akshi**
+**G. Ananya Reddy**
 
 Full Stack Developer Internship Project
 
